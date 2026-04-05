@@ -148,9 +148,11 @@ a {
 
 .nav-brand img {
 	width: 2.375rem;
-	height: 2.375rem;
-	border-radius: 50%;
-	box-shadow: 0 6px 14px rgba(26, 66, 108, 0.14);
+	height: auto;
+	max-height: 2.625rem;
+	border-radius: 0;
+	object-fit: contain;
+	filter: drop-shadow(0 4px 10px rgba(26, 66, 108, 0.16));
 }
 
 .nav-toggle {
@@ -227,9 +229,12 @@ a {
 
 .hero-logo {
 	width: clamp(4rem, 6vw, 6.3rem);
+	height: auto;
+	max-height: clamp(4.4rem, 6.8vw, 7rem);
 	margin: 0 auto 1.35rem;
-	border-radius: 50%;
-	box-shadow: 0 12px 26px rgba(27, 54, 87, 0.14);
+	border-radius: 0;
+	object-fit: contain;
+	filter: drop-shadow(0 10px 20px rgba(27, 54, 87, 0.18));
 }
 
 .hero h1 {
