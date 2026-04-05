@@ -1,390 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Project CLOIE</title>
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project CLOIE - Comprehensive Learning Outcomes and Instructional Evaluation</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<a class="skip-link" href="#main-content">Skip to main content</a>
+  <!-- HEADER SECTION -->
+  <header class="v-header">
+    <div class="page-container v-nav">
+      <a href="#" class="v-logo-container">
+        <img src="assets/cloie-logo.png" alt="CLOIE logo" class="v-brand-logo">
+        <span class="v-logo-text">CLOIE</span>
+      </a>
+      <ul class="v-nav-links">
+        <li><a href="#about" class="v-nav-link">About</a></li>
+        <li><a href="#problem" class="v-nav-link">Problem</a></li>
+        <li><a href="#features" class="v-nav-link">Features</a></li>
+        <li><a href="#benefits" class="v-nav-link">Benefits</a></li>
+        <li><a href="#stakeholders" class="v-nav-link">Stakeholders</a></li>
+        <li><a href="#team" class="v-nav-link">Team</a></li>
+      </ul>
+      <button class="v-mobile-toggle" aria-label="Toggle Navigation">☰</button>
+    </div>
+  </header>
 
-	<header class="site-header" id="home">
-		<nav class="site-nav" aria-label="Primary navigation">
-			<div class="container nav-inner">
-				<a class="nav-brand" href="#home">
-					<img src="assets/cloie-logo.png" alt="CLOIE logo" width="38" height="44">
-					<span>CLOIE</span>
-				</a>
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="v-hero v-section">
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; background-image: url('assets/acd-logo.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat; filter: blur(8px); opacity: 0.15; z-index: 0; pointer-events: none;"></div>
+      
+      <div class="page-container v-reveal" style="position: relative; z-index: 1;">
+        <div class="v-hero-logo-wrapper">
+          <img src="assets/cloie-logo.png" alt="CLOIE logo" class="v-hero-logo">
+        </div>
+        <h1>The Development of System for Comprehensive Learning Outcomes and Instructional Evaluation</h1>
+        <p>Empowering Assumption College of Davao through structured academic evaluation, stakeholder feedback, and continuous quality improvement.</p>
+        <div class="v-hero-actions">
+          <a href="#about" class="v-btn v-btn-primary">Explore the Project</a>
+          <a href="#features" class="v-btn v-btn-outline">View Features</a>
+        </div>
+      </div>
+    </section>
 
-				<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
-					<span class="nav-toggle-bar"></span>
-					<span class="nav-toggle-bar"></span>
-					<span class="nav-toggle-bar"></span>
-					<span class="sr-only">Toggle navigation menu</span>
-				</button>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="v-section v-bg-white">
+      <div class="page-container">
+        <h2 class="v-section-title v-reveal">About Project CLOIE</h2>
+        <p class="v-section-subtitle v-reveal">Discover the purpose and academic context of the capstone project.</p>
 
-				<ul id="primary-menu" class="nav-menu">
-					<li><a href="#about">About</a></li>
-					<li><a href="#problem">Problem</a></li>
-					<li><a href="#features">Features</a></li>
-					<li><a href="#benefits">Benefits</a></li>
-					<li><a href="#stakeholders">Users</a></li>
-					<li><a href="#team">Team</a></li>
-					<li><a href="#faq">FAQ</a></li>
-				</ul>
-			</div>
-		</nav>
+        <div class="v-grid-2 v-reveal" style="align-items: center;">
+          <div>
+            <p style="font-size: 18px; color: var(--cloie-text-muted); margin-bottom: 24px; line-height: 1.8;">
+              <strong>Project CLOIE</strong> is a proposed department-level evaluation platform designed to support modern higher education. It facilitates the monitoring of Program Learning Outcomes (PLOs) and Graduate Outcomes (GOs) by gathering structured stakeholder feedback.
+            </p>
+            <p style="font-size: 18px; color: var(--cloie-text-muted); line-height: 1.8;">
+              By bridging the gap between student outcomes and institutional objectives, this capstone project delivers a framework to support quality assurance, evidence generation, and continuous improvement for Assumption College of Davao.
+            </p>
+          </div>
+          <div style="background: var(--cloie-bg-light-blue); padding: 48px; border-radius: 12px; text-align: center; border: 1px solid #E5E7EB;">
+            <span style="font-size: 64px; display: block; margin-bottom: 16px; color: var(--cloie-blue);">🎓</span>
+            <h4 style="font-size: 24px; color: var(--cloie-blue); margin-bottom: 8px;">Academic Excellence</h4>
+            <p style="color: var(--cloie-text-muted);">Built to reflect purity in data and institutional devotion to educational improvement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<section class="hero section" aria-labelledby="hero-title">
-			<div class="container hero-content reveal">
-				<img class="hero-logo" src="assets/cloie-logo.png" alt="CLOIE logo mark" width="126" height="145">
-				<h1 id="hero-title">Comprehensive Learning Outcomes<br>and Instructional Evaluation</h1>
-				<p>
-					Empowering Assumption College of Davao through structured academic
-					evaluation, stakeholder feedback, and continuous quality improvement.
-				</p>
-				<div class="hero-actions">
-					<a class="btn btn-primary" href="#about">Explore the Project</a>
-					<a class="btn btn-outline" href="#features">View Features</a>
-				</div>
-			</div>
-		</section>
-	</header>
+    <!-- PROBLEM CONTEXT SECTION -->
+    <section id="problem" class="v-section v-bg-gradient-blue">
+      <div class="page-container">
+        <h2 class="v-section-title v-reveal">The Problem Context</h2>
+        <p class="v-section-subtitle v-reveal">The academic challenges CLOIE is designed to solve.</p>
 
-	<main id="main-content">
-		<section class="section section-about" id="about" aria-labelledby="about-title">
-			<div class="container">
-				<header class="section-head reveal">
-					<h2 id="about-title">About CLOIE</h2>
-					<p>Discover the purpose and academic context of the capstone project.</p>
-				</header>
+        <div class="v-grid-2 v-reveal">
+          <div class="v-card" style="border-top: 4px solid var(--cloie-blue);">
+            <span class="v-card-icon" style="font-size: 36px; margin-bottom: 16px;">🧩</span>
+            <h3 style="color: var(--cloie-blue); font-size: 20px;">Fragmented Monitoring</h3>
+            <p>Traditional learning outcome evaluation processes are often manual and scattered across different tools, making it difficult to gather cohesive, program-wide insights.</p>
+          </div>
+          <div class="v-card" style="border-top: 4px solid var(--cloie-blue);">
+            <span class="v-card-icon" style="font-size: 36px; margin-bottom: 16px;">📑</span>
+            <h3 style="color: var(--cloie-blue); font-size: 20px;">Accreditation Evidence</h3>
+            <p>Institutions face growing pressure to provide structured, clear evidence of outcome-based education and continuous quality improvement for accreditation.</p>
+          </div>
+          <div class="v-card" style="border-top: 4px solid var(--cloie-blue);">
+            <span class="v-card-icon" style="font-size: 36px; margin-bottom: 16px;">💬</span>
+            <h3 style="color: var(--cloie-blue); font-size: 20px;">Stakeholder Feedback</h3>
+            <p>Consolidating actionable feedback from alumni, employers, and faculty is challenging without a centralized system tailored to academic evaluation.</p>
+          </div>
+          <div class="v-card" style="border-top: 4px solid var(--cloie-blue);">
+            <span class="v-card-icon" style="font-size: 36px; margin-bottom: 16px;">🔍</span>
+            <h3 style="color: var(--cloie-blue); font-size: 20px;">Quality Assurance</h3>
+            <p>Academic leaders need organized reporting to conduct effective program reviews, identify curricular gaps, and drive institutional decision-making.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<div class="about-layout">
-					<div class="about-copy reveal">
-						<p>
-							<strong>CLOIE</strong> is a proposed department-level evaluation platform designed
-							to support modern higher education. It facilitates the monitoring of Program
-							Learning Outcomes (PLOs) and Graduate Outcomes (GOs) by gathering structured
-							stakeholder feedback.
-						</p>
-						<p>
-							By bridging the gap between student outcomes and institutional objectives,
-							this capstone project delivers a framework to support quality assurance,
-							evidence generation, and continuous improvement for Assumption College of Davao.
-						</p>
-					</div>
+    <!-- FEATURES SECTION -->
+    <section id="features" class="v-section v-bg-white">
+      <div class="page-container">
+        <h2 class="v-section-title v-reveal">Key Features</h2>
+        <p class="v-section-subtitle v-reveal">Core capabilities of the proposed evaluation system.</p>
 
-					<article class="about-highlight reveal" aria-label="Academic Excellence highlight">
-						<span class="card-icon" aria-hidden="true">🎓</span>
-						<h3>Academic Excellence</h3>
-						<p>
-							Built to reflect purity in data and institutional devotion
-							to educational improvement.
-						</p>
-					</article>
-				</div>
-			</div>
-		</section>
+        <div class="v-grid-3 v-reveal">
+          <div class="v-card">
+            <span class="v-card-icon">🎯</span>
+            <h3>Outcome Management</h3>
+            <p>Streamlined tracking and management of Program Learning Outcomes (PLOs) and Graduate Outcomes (GOs).</p>
+          </div>
+          <div class="v-card">
+            <span class="v-card-icon">📝</span>
+            <h3>Standardized Tools</h3>
+            <p>Deployment of standardized evaluation instruments across departments to ensure consistency.</p>
+          </div>
+          <div class="v-card">
+            <span class="v-card-icon">🤝</span>
+            <h3>Stakeholder Evaluation</h3>
+            <p>Structured mechanisms for gathering targeted feedback from various academic stakeholders.</p>
+          </div>
+          <div class="v-card">
+            <span class="v-card-icon">🔒</span>
+            <h3>Data Privacy</h3>
+            <p>Confidential, anonymized, and controlled data collection to protect respondent privacy.</p>
+          </div>
+          <div class="v-card">
+            <span class="v-card-icon">📊</span>
+            <h3>Evidence Generation</h3>
+            <p>Automated reporting to synthesize evaluation data into clear evidence for program review.</p>
+          </div>
+          <div class="v-card">
+            <span class="v-card-icon">📈</span>
+            <h3>Continuous Improvement</h3>
+            <p>Data-driven support for PDCA (Plan-Do-Check-Act) cycles to refine educational quality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<section class="section" id="problem" aria-labelledby="problem-title">
-			<div class="container">
-				<header class="section-head reveal">
-					<h2 id="problem-title">The Problem Context</h2>
-					<p>The academic challenges CLOIE is designed to solve.</p>
-				</header>
+    <!-- BENEFITS SECTION -->
+    <section id="benefits" class="v-section v-bg-gradient-blue">
+      <div class="page-container">
+        <h2 class="v-section-title v-reveal">Benefits & Value</h2>
+        <p class="v-section-subtitle v-reveal">Why the CLOIE platform matters for modern educational institutions.</p>
 
-				<div class="problem-grid">
-					<article class="problem-card reveal">
-						<span class="card-icon" aria-hidden="true">🧩</span>
-						<h3>Fragmented Monitoring</h3>
-						<p>
-							Traditional learning outcome evaluation processes are often manual and scattered
-							across different tools, making it difficult to gather cohesive, program-wide insights.
-						</p>
-					</article>
+        <div class="v-grid-2 v-reveal" style="align-items: start;">
+          <div class="v-card" style="border-left: 4px solid var(--cloie-blue);">
+            <span class="v-card-icon" style="font-size: 36px; margin-bottom: 16px;">🏫</span>
+            <h3 style="color: var(--cloie-blue); margin-bottom: 12px;">Higher Education Institutions</h3>
+            <p>Gain stronger quality assurance support, more organized evidence for program review, and centralized, systematic outcomes monitoring for accreditation readiness.</p>
+          </div>
+          <div class="v-card" style="border-left: 4px solid var(--cloie-gold);">
+            <span class="v-card-icon" style="font-size: 36px; margin-bottom: 16px;">🎓</span>
+            <h3 style="color: var(--cloie-blue); margin-bottom: 12px;">Students</h3>
+            <p>Experience better-aligned academic programs, improved relevance of learning outcomes, and stronger institutional support for graduate career readiness.</p>
+          </div>
+          <div class="v-card" style="border-left: 4px solid var(--cloie-blue);">
+            <span class="v-card-icon" style="font-size: 36px; margin-bottom: 16px;">👨‍🏫</span>
+            <h3 style="color: var(--cloie-blue); margin-bottom: 12px;">Educators</h3>
+            <p>Benefit from easier review of outcomes and stakeholder feedback, along with structured evidence to improve instruction and program alignment.</p>
+          </div>
+          <div class="v-card" style="border-left: 4px solid var(--cloie-gold);">
+            <span class="v-card-icon" style="font-size: 36px; margin-bottom: 16px;">📊</span>
+            <h3 style="color: var(--cloie-blue); margin-bottom: 12px;">Administrators</h3>
+            <p>Access clearer summaries for decision-making, easily identify academic gaps and strengths, and secure better support for continuous improvement initiatives.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					<article class="problem-card reveal">
-						<span class="card-icon" aria-hidden="true">📄</span>
-						<h3>Accreditation Evidence</h3>
-						<p>
-							Institutions face growing pressure to provide structured, clear evidence of
-							outcome-based education and continuous quality improvement for accreditation.
-						</p>
-					</article>
+    <!-- STAKEHOLDERS SECTION -->
+    <section id="stakeholders" class="v-section v-bg-white">
+      <div class="page-container">
+        <h2 class="v-section-title v-reveal">Intended Users</h2>
+        <p class="v-section-subtitle v-reveal">The key academic stakeholders who interact with the system.</p>
 
-					<article class="problem-card reveal">
-						<span class="card-icon" aria-hidden="true">💬</span>
-						<h3>Stakeholder Feedback</h3>
-						<p>
-							Consolidating actionable feedback from alumni, employers, and faculty is
-							challenging without a centralized system tailored to academic evaluation.
-						</p>
-					</article>
+        <div class="v-stakeholder-grid v-reveal">
+          <div class="v-stakeholder-card">
+            <span class="v-stakeholder-icon">👨‍🏫</span>
+            <h4>Faculty Members</h4>
+          </div>
+          <div class="v-stakeholder-card">
+            <span class="v-stakeholder-icon">🎓</span>
+            <h4>Students</h4>
+          </div>
+          <div class="v-stakeholder-card">
+            <span class="v-stakeholder-icon">📜</span>
+            <h4>Graduates / Alumni</h4>
+          </div>
+          <div class="v-stakeholder-card">
+            <span class="v-stakeholder-icon">🏢</span>
+            <h4>Industry Partners</h4>
+          </div>
+          <div class="v-stakeholder-card">
+            <span class="v-stakeholder-icon">🏫</span>
+            <h4>Department Heads</h4>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					<article class="problem-card reveal">
-						<span class="card-icon" aria-hidden="true">🔍</span>
-						<h3>Quality Assurance</h3>
-						<p>
-							Academic leaders need organized reporting to conduct effective program reviews,
-							identify curricular gaps, and drive institutional decision-making.
-						</p>
-					</article>
-				</div>
-			</div>
-		</section>
+    <!-- TEAM SECTION -->
+    <section id="team" class="v-section v-bg-gradient-blue">
+      <div class="page-container">
+        <h2 class="v-section-title v-reveal">Project Team</h2>
+        <p class="v-section-subtitle v-reveal">The academic stakeholders and proponents behind the Project CLOIE Capstone.</p>
 
-		<section class="section" id="features" aria-labelledby="features-title">
-			<div class="container">
-				<header class="section-head reveal">
-					<h2 id="features-title">Key Features</h2>
-					<p>Core capabilities of the proposed evaluation system.</p>
-				</header>
+        <div class="v-team-grid v-reveal">
+          <div class="v-team-card">
+            <img src="assets/client.png" alt="Client" class="v-team-photo">
+            <h4 class="v-team-name">Ms. Rosalyn M. Biala, MIT</h4>
+            <div class="v-team-role">Client</div>
+            <p class="v-team-bio">Provides academic direction and ensures that the CLOIE system aligns with institutional requirements, outcome-based education principles, and accreditation standards. Oversees the relevance and applicability of the system within the various programs.</p>
+          </div>
+          <div class="v-team-card">
+            <img src="assets/member1.png" alt="Team Member 1" class="v-team-photo">
+            <h4 class="v-team-name">Andy Zane B. Egut</h4>
+            <div class="v-team-role">Full-Stack Developer</div>
+            <p class="v-team-bio">Responsible for the technical development of the system, including front-end and system architecture. Ensures functionality, responsiveness, and implementation of features based on system requirements.</p>
+          </div>
+          <div class="v-team-card">
+            <img src="assets/member2.png" alt="Team Member 2" class="v-team-photo">
+            <h4 class="v-team-name">Abbegail D. Abebon</h4>
+            <div class="v-team-role">Technical Writer & System Analyst</div>
+            <p class="v-team-bio">Handles system documentation, analysis, and requirement definition. Translates academic and technical concepts into clear, structured documentation and ensures alignment with CLOIE's objectives and evaluation framework.</p>
+          </div>
+          <div class="v-team-card">
+            <img src="assets/consultant.png" alt="Capstone Consultant" class="v-team-photo">
+            <h4 class="v-team-name">Ms. Christine Marie D. Ordaneza, LPT</h4>
+            <div class="v-team-role">Capstone Consultant</div>
+            <p class="v-team-bio">Provides expert guidance on system design, methodology, and academic standards. Ensures that the project meets capstone requirements and supports the system's alignment with outcome-based education and quality assurance practices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<div class="feature-grid">
-					<article class="feature-card reveal">
-						<span class="card-icon" aria-hidden="true">🎯</span>
-						<h3>Outcome Management</h3>
-						<p>
-							Streamlined tracking and management of Program Learning Outcomes (PLOs)
-							and Graduate Outcomes (GOs).
-						</p>
-					</article>
+    <!-- FAQ SECTION -->
+    <section class="v-section v-bg-white">
+      <div class="page-container">
+        <h2 class="v-section-title v-reveal">Frequently Asked Questions</h2>
+        <p class="v-section-subtitle v-reveal">Common inquiries regarding Project CLOIE scope.</p>
 
-					<article class="feature-card reveal">
-						<span class="card-icon" aria-hidden="true">📝</span>
-						<h3>Standardized Tools</h3>
-						<p>
-							Deployment of standardized evaluation instruments across departments
-							to ensure consistency.
-						</p>
-					</article>
+        <div class="v-faq-container v-reveal">
+          <div class="v-faq-item">
+            <div class="v-faq-question">
+              What does CLOIE stand for?
+              <span class="v-faq-icon">▾</span>
+            </div>
+            <div class="v-faq-answer">
+              <p style="padding-top: 8px;">CLOIE stands for Comprehensive Learning Outcomes and Instructional Evaluation.</p>
+            </div>
+          </div>
+          <div class="v-faq-item">
+            <div class="v-faq-question">
+              Does CLOIE replace the Learning Management System (LMS)?
+              <span class="v-faq-icon">▾</span>
+            </div>
+            <div class="v-faq-answer">
+              <p style="padding-top: 8px;">No. CLOIE is specifically focused on outcomes monitoring, stakeholder evaluation, and quality assurance reporting. It does not deliver instructional content or manage individual student grades.</p>
+            </div>
+          </div>
+          <div class="v-faq-item">
+            <div class="v-faq-question">
+              Is this the actual CLOIE application?
+              <span class="v-faq-icon">▾</span>
+            </div>
+            <div class="v-faq-answer">
+              <p style="padding-top: 8px;">No. This website is a promotional front-end showcase designed to present the capstone project. The actual CLOIE system is a separate application.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-					<article class="feature-card reveal">
-						<span class="card-icon" aria-hidden="true">🤝</span>
-						<h3>Stakeholder Evaluation</h3>
-						<p>
-							Structured mechanisms for gathering targeted feedback
-							from various academic stakeholders.
-						</p>
-					</article>
+  <!-- FOOTER -->
+  <footer class="v-footer">
+    <div class="page-container">
+      <div style="margin-bottom: 24px;">
+        <img src="assets/cloie-logo.png" alt="CLOIE logo" style="height: 80px; width: auto; background: white; padding: 8px; border-radius: 50%; display: block; margin: 0 auto;">
+      </div>
+      <a href="#" class="v-footer-logo" style="font-size: 24px;">Project CLOIE</a>
+      <p style="margin-bottom: 24px; opacity: 0.8;">ITE 1 – Front-End Web System Technologies</p>
+      <div class="v-footer-links">
+        <a href="#about" class="v-footer-link">About</a>
+        <a href="#features" class="v-footer-link">Features</a>
+        <a href="#stakeholders" class="v-footer-link">Stakeholders</a>
+        <a href="#team" class="v-footer-link">Team</a>
+      </div>
+      <div class="v-footer-bottom">
+        <p>&copy; 2026 Project CLOIE Team. Assumption College of Davao Capstone Showcase.</p>
+      </div>
+    </div>
+  </footer>
 
-					<article class="feature-card reveal">
-						<span class="card-icon" aria-hidden="true">🔒</span>
-						<h3>Data Privacy</h3>
-						<p>
-							Confidential, anonymized, and controlled data collection
-							to protect respondent privacy.
-						</p>
-					</article>
-
-					<article class="feature-card reveal">
-						<span class="card-icon" aria-hidden="true">📊</span>
-						<h3>Evidence Generation</h3>
-						<p>
-							Automated reporting to synthesize evaluation data into
-							clear evidence for program review.
-						</p>
-					</article>
-
-					<article class="feature-card reveal">
-						<span class="card-icon" aria-hidden="true">📈</span>
-						<h3>Continuous Improvement</h3>
-						<p>
-							Data-driven support for PDCA (Plan-Do-Check-Act) cycles
-							to refine educational quality.
-						</p>
-					</article>
-				</div>
-			</div>
-		</section>
-
-		<section class="section" id="benefits" aria-labelledby="benefits-title">
-			<div class="container">
-				<header class="section-head reveal">
-					<h2 id="benefits-title">Benefits &amp; Value</h2>
-					<p>Why the CLOIE platform matters for modern educational institutions.</p>
-				</header>
-
-				<div class="benefit-grid">
-					<article class="benefit-card is-blue reveal">
-						<span class="card-icon" aria-hidden="true">🏛️</span>
-						<h3>Higher Education Institutions</h3>
-						<p>
-							Gain stronger quality assurance support, more organized evidence for
-							program review, and centralized, systematic outcomes monitoring for accreditation readiness.
-						</p>
-					</article>
-
-					<article class="benefit-card is-gold reveal">
-						<span class="card-icon" aria-hidden="true">🎓</span>
-						<h3>Students</h3>
-						<p>
-							Experience better-aligned academic programs, improved relevance of
-							learning outcomes, and stronger institutional support for graduate career readiness.
-						</p>
-					</article>
-
-					<article class="benefit-card is-blue reveal">
-						<span class="card-icon" aria-hidden="true">👨‍🏫</span>
-						<h3>Educators</h3>
-						<p>
-							Benefit from easier review of outcomes and stakeholder feedback,
-							along with structured evidence to improve instruction and program alignment.
-						</p>
-					</article>
-
-					<article class="benefit-card is-gold reveal">
-						<span class="card-icon" aria-hidden="true">📊</span>
-						<h3>Administrators</h3>
-						<p>
-							Access clearer summaries for decision-making, easily identify academic
-							gaps and strengths, and secure better support for continuous improvement initiatives.
-						</p>
-					</article>
-				</div>
-			</div>
-		</section>
-
-		<section class="section" id="stakeholders" aria-labelledby="stakeholders-title">
-			<div class="container">
-				<header class="section-head reveal">
-					<h2 id="stakeholders-title">Intended Users</h2>
-					<p>The key academic stakeholders who interact with the system.</p>
-				</header>
-
-				<div class="users-grid">
-					<article class="user-card reveal">
-						<span class="card-icon" aria-hidden="true">👨‍🏫</span>
-						<h3>Faculty Members</h3>
-					</article>
-
-					<article class="user-card reveal">
-						<span class="card-icon" aria-hidden="true">🎓</span>
-						<h3>Students</h3>
-					</article>
-
-					<article class="user-card reveal">
-						<span class="card-icon" aria-hidden="true">📜</span>
-						<h3>Graduates / Alumni</h3>
-					</article>
-
-					<article class="user-card reveal">
-						<span class="card-icon" aria-hidden="true">🏢</span>
-						<h3>Industry Partners</h3>
-					</article>
-
-					<article class="user-card reveal">
-						<span class="card-icon" aria-hidden="true">🏛️</span>
-						<h3>Department Heads</h3>
-					</article>
-				</div>
-			</div>
-		</section>
-
-		<section class="section" id="team" aria-labelledby="team-title">
-			<div class="container">
-				<header class="section-head reveal">
-					<h2 id="team-title">Project Team</h2>
-					<p>The academic stakeholders and proponents behind the CLOIE capstone project.</p>
-				</header>
-
-				<div class="team-grid">
-					<article class="team-card reveal">
-						<div class="team-avatar" aria-hidden="true">👤</div>
-						<h3>Name Placeholder</h3>
-						<p class="team-role">Client</p>
-						<p class="team-description">Short description placeholder outlining their role and institutional connection.</p>
-					</article>
-
-					<article class="team-card reveal">
-						<div class="team-avatar" aria-hidden="true">👤</div>
-						<h3>Name Placeholder</h3>
-						<p class="team-role">Team Member 1</p>
-						<p class="team-description">Short description placeholder outlining their core contributions to the project.</p>
-					</article>
-
-					<article class="team-card reveal">
-						<div class="team-avatar" aria-hidden="true">👤</div>
-						<h3>Name Placeholder</h3>
-						<p class="team-role">Team Member 2</p>
-						<p class="team-description">Short description placeholder outlining their core contributions to the project.</p>
-					</article>
-
-					<article class="team-card reveal">
-						<div class="team-avatar" aria-hidden="true">👤</div>
-						<h3>Name Placeholder</h3>
-						<p class="team-role">Capstone Consultant</p>
-						<p class="team-description">Short description placeholder outlining their advisory role and academic guidance.</p>
-					</article>
-				</div>
-			</div>
-		</section>
-
-		<section class="section" id="faq" aria-labelledby="faq-title">
-			<div class="container faq-container">
-				<header class="section-head reveal">
-					<h2 id="faq-title">Frequently Asked Questions</h2>
-					<p>Common inquiries regarding the CLOIE system scope.</p>
-				</header>
-
-				<div class="faq-list" role="list">
-					<article class="faq-item reveal" role="listitem">
-						<h3>
-							<button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-1" id="faq-trigger-1">
-								What does CLOIE stand for?
-								<span class="faq-chevron" aria-hidden="true">▾</span>
-							</button>
-						</h3>
-						<div class="faq-panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1" hidden>
-							<p>
-								ProjectCLOIE stands for <strong> System for Comprehensive Learning Outcomes and Instructional Evaluation</strong>,
-								a capstone-proposed platform focused on outcomes monitoring, stakeholder feedback, and program-level reporting.
-							</p>
-						</div>
-					</article>
-
-					<article class="faq-item is-open reveal" role="listitem">
-						<h3>
-							<button class="faq-trigger" type="button" aria-expanded="true" aria-controls="faq-panel-2" id="faq-trigger-2">
-								Does CLOIE replace the Learning Management System (LMS)?
-								<span class="faq-chevron" aria-hidden="true">▴</span>
-							</button>
-						</h3>
-						<div class="faq-panel" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2">
-							<p>
-								No. CLOIE is specifically focused on outcomes monitoring, stakeholder evaluation, and quality assurance
-								reporting. It does not deliver instructional content or manage individual student grades.
-							</p>
-						</div>
-					</article>
-
-					<article class="faq-item reveal" role="listitem">
-						<h3>
-							<button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">
-								Is this the actual CLOIE application?
-								<span class="faq-chevron" aria-hidden="true">▾</span>
-							</button>
-						</h3>
-						<div class="faq-panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3" hidden>
-							<p>
-								This website is a promotional and academic showcase of the capstone proposal. It is not the production
-								CLOIE software application.
-							</p>
-						</div>
-					</article>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<footer class="site-footer">
-		<div class="container footer-inner">
-			<p>Comprehensive Learning Outcomes and Instructional Evaluation</p>
-			<p>&copy; <span id="year"></span> Assumption College of Davao Capstone Team</p>
-		</div>
-	</footer>
-
-	<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
