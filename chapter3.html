@@ -46,55 +46,181 @@
       <div class="page-container v-article-grid v-reveal">
         <article id="framework" class="v-article-block">
           <h2>3.1 Software Development Framework</h2>
-          <p>The proposed CLOIE system follows an Agile Kanban-based workflow to support iterative delivery and continuous refinement in a capstone environment.</p>
-          <ul>
-            <li><strong>Backlog:</strong> planned features, requirements, and improvements</li>
-            <li><strong>To Do:</strong> prioritized tasks ready for implementation</li>
-            <li><strong>In Progress:</strong> active development</li>
-            <li><strong>Testing:</strong> validation of functionality and usability</li>
-            <li><strong>Done:</strong> verified and completed tasks</li>
-          </ul>
+          <p class="v-chapter-intro">Chapter 3 frames CLOIE development as a structured yet flexible process: tasks are visualized, prioritized continuously, and refined through feedback while staying aligned with capstone milestones.</p>
+
+          <div class="v-method-grid">
+            <article class="v-method-card">
+              <h3>Backlog</h3>
+              <p>All planned features, requirements, and refinements are listed and prioritized for delivery.</p>
+            </article>
+            <article class="v-method-card">
+              <h3>To Do</h3>
+              <p>Ready tasks are selected based on priority, dependencies, and milestone relevance.</p>
+            </article>
+            <article class="v-method-card">
+              <h3>In Progress</h3>
+              <p>Active implementation focuses on core modules before layered enhancements.</p>
+            </article>
+            <article class="v-method-card">
+              <h3>Testing</h3>
+              <p>Built tasks are validated for correctness, usability, and alignment with expected behavior.</p>
+            </article>
+            <article class="v-method-card">
+              <h3>Done</h3>
+              <p>Verified tasks are marked complete and retained as stable increments.</p>
+            </article>
+          </div>
+
+          <div class="v-key-insight">
+            <h3>Why Kanban Was Selected</h3>
+            <p>The capstone documentation highlights Kanban's fit for a small team with evolving requirements. It supports visible progress, continuous reprioritization, and incremental delivery without sprint overhead while still preserving milestone discipline.</p>
+          </div>
         </article>
 
         <article id="requirements" class="v-article-block">
           <h2>3.2 Requirements</h2>
-          <h3>3.2.1 User Requirements</h3>
-          <p>Stakeholder groups include faculty, students, graduating students, alumni, industry partners, program heads/deans, and system administrators.</p>
-          <h3>3.2.2 Functional Requirements</h3>
-          <p>Core modules include user and access management, outcomes management, instrument management, evaluation cycles, response processing, analytics/reporting, and administrative controls.</p>
-          <h3>3.2.3 Non-Functional Requirements</h3>
-          <p>Priority quality attributes include usability, performance, security, confidentiality, reliability, scalability, availability, responsiveness, and maintainability.</p>
+          <p class="v-chapter-intro">The requirements specification is organized into user expectations, required system behaviors, and quality constraints that keep CLOIE practical, secure, and maintainable for real academic use.</p>
+
+          <div class="v-requirement-grid">
+            <article class="v-requirement-card">
+              <h3>3.2.1 User Requirements</h3>
+              <p>CLOIE supports role-specific workflows for all intended stakeholder groups:</p>
+              <div class="v-chip-group">
+                <span class="v-chip">Faculty</span>
+                <span class="v-chip">Students</span>
+                <span class="v-chip">Graduating Students</span>
+                <span class="v-chip">Alumni</span>
+                <span class="v-chip">Industry Partners</span>
+                <span class="v-chip">Program Heads and Deans</span>
+                <span class="v-chip">System Administrators</span>
+              </div>
+              <ul class="v-list-tight">
+                <li>Stakeholders require secure, role-based access and context-specific outputs.</li>
+                <li>Users need clear forms, confidentiality protection, and efficient participation across devices.</li>
+                <li>Program-level customization must remain controlled and isolated by design.</li>
+              </ul>
+            </article>
+
+            <article class="v-requirement-card">
+              <h3>3.2.2 Functional Requirements</h3>
+              <p>The system must deliver core end-to-end modules for evaluation and reporting:</p>
+              <ul class="v-list-tight">
+                <li>User and access management</li>
+                <li>Outcomes management (PLOs, GOs, and course-level mappings)</li>
+                <li>Evaluation instrument management with version control</li>
+                <li>Evaluation cycle configuration and control</li>
+                <li>Response collection, validation, and processing</li>
+                <li>Analytics and consolidated reporting</li>
+                <li>Qualitative feedback handling (including optional prompt-assisted input)</li>
+                <li>Administrative configuration and governance controls</li>
+              </ul>
+            </article>
+
+            <article class="v-requirement-card">
+              <h3>3.2.3 Non-Functional Requirements</h3>
+              <p>Quality standards ensure the platform remains dependable and usable in institutional settings:</p>
+              <div class="v-chip-group">
+                <span class="v-chip">Usability</span>
+                <span class="v-chip">Performance</span>
+                <span class="v-chip">Security</span>
+                <span class="v-chip">Confidentiality</span>
+                <span class="v-chip">Reliability</span>
+                <span class="v-chip">Scalability</span>
+                <span class="v-chip">Availability</span>
+                <span class="v-chip">Responsiveness</span>
+                <span class="v-chip">Maintainability</span>
+              </div>
+              <p>These constraints align with CLOIE's intended role as a multi-user, report-oriented, college-level monitoring system.</p>
+            </article>
+          </div>
         </article>
 
         <article id="stack" class="v-article-block">
           <h2>3.2.4 Software and Hardware Requirements</h2>
-          <p><strong>Note:</strong> this section summarizes the planned technology stack of the proposed CLOIE system in the capstone documentation, not the implementation stack of this summary website.</p>
-          <h3>Software Requirements</h3>
-          <ul>
-            <li>Frontend framework: Next.js</li>
-            <li>Language: TypeScript</li>
-            <li>Styling and UI: Tailwind CSS and shadcn/ui</li>
-            <li>Forms/validation/state: React Hook Form, Zod, TanStack Query</li>
-            <li>Data and deployment: PostgreSQL, Supabase, Vercel</li>
-            <li>Visualization/testing: Chart.js, Recharts, wordcloud2.js, Vitest, Playwright</li>
-          </ul>
-          <h3>Hardware Requirements</h3>
-          <ul>
-            <li>Development: modern laptop/desktop, at least 8 GB RAM, SSD storage</li>
-            <li>End users: desktop/laptop/tablet/smartphone with modern browser and internet</li>
-          </ul>
+          <p class="v-stack-note"><strong>Important:</strong> this section summarizes the <strong>planned CLOIE system stack</strong> described in the capstone documentation. It is not the implementation stack of this static summary website.</p>
+
+          <div class="v-stack-grid">
+            <article class="v-stack-card">
+              <h3>Software Requirements</h3>
+
+              <h4>Development Software</h4>
+              <ul class="v-list-tight">
+                <li>Windows 10/11, Visual Studio Code, Git/GitHub</li>
+                <li>Figma and modeling tools (Visual Paradigm/Draw.io)</li>
+                <li>Browser testing via Chrome, Firefox, Edge, or Safari</li>
+              </ul>
+
+              <h4>Application Development Stack</h4>
+              <ul class="v-list-tight">
+                <li>Next.js and TypeScript</li>
+                <li>Tailwind CSS and shadcn/ui</li>
+                <li>React Hook Form, Zod, TanStack Query</li>
+                <li>Chart.js, Recharts, wordcloud2.js, winkNLP, stopword</li>
+                <li>PostgreSQL and Supabase</li>
+                <li>Vitest and Playwright</li>
+              </ul>
+
+              <h4>Deployment Services</h4>
+              <ul class="v-list-tight">
+                <li>Cloud hosting suitable for web/PWA deployment</li>
+                <li>Vercel-equivalent frontend deployment</li>
+                <li>Supabase-equivalent managed backend/database services</li>
+              </ul>
+            </article>
+
+            <article class="v-stack-card">
+              <h3>Hardware Requirements</h3>
+
+              <h4>For Development</h4>
+              <ul class="v-list-tight">
+                <li>Intel Core i5 / Ryzen 5 or higher</li>
+                <li>At least 8 GB RAM</li>
+                <li>At least 256 GB SSD</li>
+                <li>Stable broadband internet connection</li>
+              </ul>
+
+              <h4>For End Users</h4>
+              <ul class="v-list-tight">
+                <li>Desktop, laptop, tablet, or smartphone</li>
+                <li>Modern web browser</li>
+                <li>Stable internet access for participation and submission</li>
+              </ul>
+
+              <p>This hardware profile supports cross-device access for students, faculty, alumni, industry partners, and administrators.</p>
+            </article>
+          </div>
         </article>
 
         <article id="feasibility" class="v-article-block">
           <h2>3.3 Feasibility Issues</h2>
-          <h3>Economic Feasibility</h3>
-          <p>Web/PWA-based development is practical for student-led implementation and avoids costs from multi-platform native builds.</p>
-          <h3>Technical Feasibility</h3>
-          <p>The required modules are compatible with modern web architecture and can be delivered incrementally.</p>
-          <h3>Operational Feasibility</h3>
-          <p>The proposed workflows align with existing academic evaluation practices at Assumption College of Davao.</p>
-          <h3>Schedule Feasibility</h3>
-          <p>The staged capstone timeline (March to September 2026) supports progressive delivery from core features to refinement.</p>
+          <p class="v-chapter-intro">Feasibility analysis in Chapter 3 evaluates whether CLOIE is practical to build and adopt within capstone constraints and institutional context.</p>
+
+          <div class="v-feasibility-grid">
+            <article class="v-feasibility-card">
+              <h3>3.3.1 Economic Feasibility</h3>
+              <p>The proposed web/PWA direction is financially realistic for a student-led project because it avoids separate native implementations and leverages widely available tools and cloud services.</p>
+            </article>
+
+            <article class="v-feasibility-card">
+              <h3>3.3.2 Technical Feasibility</h3>
+              <p>CLOIE's required modules fit modern web architecture and relational data structures, with incremental delivery possible from core modules to advanced reporting features.</p>
+            </article>
+
+            <article class="v-feasibility-card">
+              <h3>3.3.3 Operational Feasibility</h3>
+              <p>The system aligns with existing academic practices at Assumption College of Davao and complements current institutional systems rather than replacing LMS/SIS workflows.</p>
+            </article>
+
+            <article class="v-feasibility-card">
+              <h3>3.3.4 Schedule Feasibility</h3>
+              <p>The March to September 2026 timeline is workable through staged milestones, early core-module prioritization, and continuous Kanban-guided progress.</p>
+            </article>
+          </div>
+
+          <div class="v-synthesis-panel">
+            <h3>Feasibility Conclusion</h3>
+            <p>Chapter 3 concludes that CLOIE is viable in economic, technical, operational, and schedule dimensions, making it a practical capstone proposal within defined scope boundaries.</p>
+          </div>
         </article>
 
         <nav class="v-chapter-nav">

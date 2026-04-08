@@ -105,6 +105,10 @@
   color: var(--cloie-text-muted);
 }
 
+.v-chapter-intro {
+  margin-bottom: 18px;
+}
+
 .v-article-block ul {
   margin: 0;
   padding-left: 20px;
@@ -117,6 +121,183 @@
 
 .v-article-block li + li {
   margin-top: 6px;
+}
+
+.v-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.v-method-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.v-method-card {
+  border: 1px solid #dbeafa;
+  border-radius: 10px;
+  padding: 12px;
+  background: linear-gradient(135deg, #f7fbff 0%, #f2f9ff 100%);
+}
+
+.v-method-card h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.v-method-card p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.v-requirement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.v-requirement-card {
+  border: 1px solid #e1ecf7;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fbfdff;
+}
+
+.v-requirement-card h3 {
+  font-size: 17px;
+  margin: 0 0 10px;
+}
+
+.v-requirement-card p {
+  margin: 0 0 10px;
+}
+
+.v-stack-note {
+  border: 1px solid #d4e8fa;
+  background: #f5fbff;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.v-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.v-stack-card {
+  border: 1px solid #ddeaf7;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fff;
+}
+
+.v-stack-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.v-stack-card h4 {
+  margin: 12px 0 8px;
+  font-size: 15px;
+  color: var(--cloie-blue-dark);
+}
+
+.v-stack-card p {
+  margin: 10px 0 0;
+}
+
+.v-feasibility-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.v-feasibility-card {
+  border: 1px solid #dbeafa;
+  border-radius: 10px;
+  padding: 16px;
+  background: linear-gradient(135deg, #f7fbff 0%, #f2f9ff 100%);
+}
+
+.v-feasibility-card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.v-feasibility-card p {
+  margin: 0;
+}
+
+.v-topic-card {
+  border: 1px solid #e1ecf7;
+  border-radius: 10px;
+  padding: 15px;
+  background: #fbfdff;
+}
+
+.v-topic-card h3 {
+  font-size: 17px;
+  margin: 10px 0 8px;
+}
+
+.v-topic-card p {
+  margin: 0 0 10px;
+}
+
+.v-topic-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--cloie-blue-dark);
+  background: #eef7ff;
+  border: 1px solid #cde6f8;
+}
+
+.v-system-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.v-system-card {
+  border: 1px solid #dbeafa;
+  border-radius: 10px;
+  padding: 16px;
+  background: linear-gradient(135deg, #f7fbff 0%, #f2f9ff 100%);
+}
+
+.v-system-card h3 {
+  font-size: 17px;
+  margin: 0 0 10px;
+}
+
+.v-system-card p {
+  margin: 0;
+}
+
+.v-system-card p + p {
+  margin-top: 10px;
+}
+
+.v-synthesis-panel {
+  border: 1px solid #cfe6fb;
+  background: linear-gradient(135deg, #f4faff 0%, #eef8ff 100%);
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 10px;
+}
+
+.v-synthesis-panel h3 {
+  margin-bottom: 8px;
 }
 
 .v-key-insight {
@@ -303,6 +484,16 @@
   min-width: 180px;
 }
 
+@media (max-width: 1100px) {
+  .v-method-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .v-requirement-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .v-page-title {
     font-size: 30px;
@@ -323,6 +514,12 @@
 
   .v-significance-grid,
   .v-scope-grid,
+  .v-method-grid,
+  .v-requirement-grid,
+  .v-stack-grid,
+  .v-topic-grid,
+  .v-system-grid,
+  .v-feasibility-grid,
   .v-term-grid,
   .v-ipo-grid {
     grid-template-columns: 1fr;
