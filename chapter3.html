@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLOIE - Chapter 3 Summary</title>
+  <link rel="shortcut icon" href="assets/cloie-logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <header class="v-header">
+    <div class="page-container v-nav">
+      <a href="index.html" class="v-logo-container">
+        <img src="assets/cloie-logo.png" alt="CLOIE logo" class="v-brand-logo">
+        <span class="v-logo-text">CLOIE</span>
+      </a>
+      <ul class="v-nav-links">
+        <li><a href="index.html" class="v-nav-link">Home</a></li>
+        <li><a href="chapter1.html" class="v-nav-link">Chapter 1</a></li>
+        <li><a href="chapter2.html" class="v-nav-link">Chapter 2</a></li>
+        <li><a href="chapter3.html" class="v-nav-link">Chapter 3</a></li>
+        <li><a href="index.html#team" class="v-nav-link">Team</a></li>
+      </ul>
+      <button class="v-mobile-toggle" aria-label="Toggle Navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="v-page-main">
+    <section class="v-page-banner">
+      <div class="page-container v-reveal">
+        <span class="v-page-label">Chapter 3</span>
+        <h1 class="v-page-title">Methodology</h1>
+        <p class="v-page-desc">Summary of CLOIE's software development framework, requirements, software and hardware needs, and feasibility issues.</p>
+        <p class="v-breadcrumb"><a href="index.html">Home</a> / Chapter 3</p>
+        <div class="v-jump-links">
+          <a class="v-jump-link" href="#framework">Software Development Framework</a>
+          <a class="v-jump-link" href="#requirements">Requirements</a>
+          <a class="v-jump-link" href="#stack">Software and Hardware</a>
+          <a class="v-jump-link" href="#feasibility">Feasibility Issues</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="v-section v-bg-white">
+      <div class="page-container v-article-grid v-reveal">
+        <article id="framework" class="v-article-block">
+          <h2>3.1 Software Development Framework</h2>
+          <p>The proposed CLOIE system follows an Agile Kanban-based workflow to support iterative delivery and continuous refinement in a capstone environment.</p>
+          <ul>
+            <li><strong>Backlog:</strong> planned features, requirements, and improvements</li>
+            <li><strong>To Do:</strong> prioritized tasks ready for implementation</li>
+            <li><strong>In Progress:</strong> active development</li>
+            <li><strong>Testing:</strong> validation of functionality and usability</li>
+            <li><strong>Done:</strong> verified and completed tasks</li>
+          </ul>
+        </article>
+
+        <article id="requirements" class="v-article-block">
+          <h2>3.2 Requirements</h2>
+          <h3>3.2.1 User Requirements</h3>
+          <p>Stakeholder groups include faculty, students, graduating students, alumni, industry partners, program heads/deans, and system administrators.</p>
+          <h3>3.2.2 Functional Requirements</h3>
+          <p>Core modules include user and access management, outcomes management, instrument management, evaluation cycles, response processing, analytics/reporting, and administrative controls.</p>
+          <h3>3.2.3 Non-Functional Requirements</h3>
+          <p>Priority quality attributes include usability, performance, security, confidentiality, reliability, scalability, availability, responsiveness, and maintainability.</p>
+        </article>
+
+        <article id="stack" class="v-article-block">
+          <h2>3.2.4 Software and Hardware Requirements</h2>
+          <p><strong>Note:</strong> this section summarizes the planned technology stack of the proposed CLOIE system in the capstone documentation, not the implementation stack of this summary website.</p>
+          <h3>Software Requirements</h3>
+          <ul>
+            <li>Frontend framework: Next.js</li>
+            <li>Language: TypeScript</li>
+            <li>Styling and UI: Tailwind CSS and shadcn/ui</li>
+            <li>Forms/validation/state: React Hook Form, Zod, TanStack Query</li>
+            <li>Data and deployment: PostgreSQL, Supabase, Vercel</li>
+            <li>Visualization/testing: Chart.js, Recharts, wordcloud2.js, Vitest, Playwright</li>
+          </ul>
+          <h3>Hardware Requirements</h3>
+          <ul>
+            <li>Development: modern laptop/desktop, at least 8 GB RAM, SSD storage</li>
+            <li>End users: desktop/laptop/tablet/smartphone with modern browser and internet</li>
+          </ul>
+        </article>
+
+        <article id="feasibility" class="v-article-block">
+          <h2>3.3 Feasibility Issues</h2>
+          <h3>Economic Feasibility</h3>
+          <p>Web/PWA-based development is practical for student-led implementation and avoids costs from multi-platform native builds.</p>
+          <h3>Technical Feasibility</h3>
+          <p>The required modules are compatible with modern web architecture and can be delivered incrementally.</p>
+          <h3>Operational Feasibility</h3>
+          <p>The proposed workflows align with existing academic evaluation practices at Assumption College of Davao.</p>
+          <h3>Schedule Feasibility</h3>
+          <p>The staged capstone timeline (March to September 2026) supports progressive delivery from core features to refinement.</p>
+        </article>
+
+        <nav class="v-chapter-nav">
+          <a href="chapter2.html" class="v-btn v-btn-outline">Previous: Chapter 2</a>
+          <a href="index.html#chapter-preview" class="v-btn v-btn-outline">Back to Chapter Preview</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="v-footer">
+    <div class="page-container">
+      <div style="margin-bottom: 24px;">
+        <img src="assets/cloie-logo.png" alt="CLOIE logo" style="height: 80px; width: auto; background: white; padding: 8px; border-radius: 50%; display: block; margin: 0 auto;">
+      </div>
+      <a href="index.html" class="v-footer-logo" style="font-size: 24px;">Project CLOIE</a>
+      <p style="margin-bottom: 24px; opacity: 0.8;">ITE 1 – Web System Technologies 1</p>
+      <div class="v-footer-links">
+        <a href="index.html" class="v-footer-link">Home</a>
+        <a href="chapter1.html" class="v-footer-link">Chapter 1</a>
+        <a href="chapter2.html" class="v-footer-link">Chapter 2</a>
+        <a href="chapter3.html" class="v-footer-link">Chapter 3</a>
+        <a href="index.html#team" class="v-footer-link">Team</a>
+      </div>
+      <div class="v-footer-bottom">
+        <p>&copy; 2026 Project CLOIE Team. Assumption College of Davao Capstone Showcase.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="v-back-to-top" aria-label="Back to top">↑</a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

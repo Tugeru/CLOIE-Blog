@@ -9,7 +9,7 @@ if (toggleBtn && navLinks) {
   });
 }
 
-// Smooth Scroll
+// Smooth Scroll for same-page hash links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const href = this.getAttribute('href');
@@ -74,24 +74,43 @@ faqs.forEach(faq => {
   });
 });
 
-// Nav Active State
-const sections = document.querySelectorAll('.v-section');
+// Nav Active State (page-based)
 const navItems = document.querySelectorAll('.v-nav-link');
+const currentPath = window.location.pathname.split('/').pop() || 'index.html';
 
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(sec => {
-    const top = sec.offsetTop - 150;
-    const height = sec.offsetHeight;
-    if (window.scrollY >= top && window.scrollY < top + height) {
-      current = sec.getAttribute('id');
-    }
-  });
-  
-  navItems.forEach(li => {
-    li.classList.remove('active');
-    if (li.getAttribute('href') === `#${current}`) {
-      li.classList.add('active');
-    }
-  });
+navItems.forEach(item => {
+  const href = item.getAttribute('href') || '';
+  const targetPath = href.split('#')[0];
+  const hasHash = href.includes('#');
+
+  if ((currentPath === '' || currentPath === 'index.html') && targetPath === 'index.html' && !hasHash) {
+    item.classList.add('active');
+  } else if (targetPath && targetPath === currentPath && !hasHash) {
+    item.classList.add('active');
+  }
 });
+
+// Home-only section spy (for optional in-page nav links)
+const sections = document.querySelectorAll('.v-section[id]');
+const inPageNavItems = Array.from(navItems).filter(item => (item.getAttribute('href') || '').startsWith('#'));
+
+if (sections.length > 0 && inPageNavItems.length > 0) {
+  window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach(sec => {
+      const top = sec.offsetTop - 150;
+      const height = sec.offsetHeight;
+      if (window.scrollY >= top && window.scrollY < top + height) {
+        current = sec.getAttribute('id');
+      }
+    });
+
+    inPageNavItems.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('active');
+      }
+    });
+  });
+}
