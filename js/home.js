@@ -57,7 +57,7 @@ if (hashNavLinks.length > 0) {
     .filter(Boolean);
 
   if (watchedSections.length > 0) {
-    window.addEventListener('scroll', () => {
+    const updateHomeSectionActive = () => {
       let currentHash = '';
 
       watchedSections.forEach(item => {
@@ -83,23 +83,19 @@ if (hashNavLinks.length > 0) {
       } else if (homeLink) {
         homeLink.classList.add('active');
       }
-    });
+    };
+
+    updateHomeSectionActive();
+    window.addEventListener('scroll', updateHomeSectionActive);
   }
 }
 
-const faqs = document.querySelectorAll('.v-faq-question');
-
-faqs.forEach(faq => {
-  faq.addEventListener('click', () => {
-    const parent = faq.parentElement;
-    const wasActive = parent.classList.contains('active');
-
-    document.querySelectorAll('.v-faq-item').forEach(item => {
-      item.classList.remove('active');
-    });
-
-    if (!wasActive) {
-      parent.classList.add('active');
-    }
-  });
-});
+if (window.location.hash && window.location.hash !== '#top') {
+  const initialTarget = document.querySelector(window.location.hash);
+  if (initialTarget) {
+    window.setTimeout(() => {
+      const top = initialTarget.getBoundingClientRect().top + window.pageYOffset - getHomeHeaderOffset();
+      window.scrollTo({ top, behavior: 'auto' });
+    }, 0);
+  }
+}

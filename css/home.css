@@ -443,68 +443,6 @@
   color: var(--cloie-text-muted);
 }
 
-.v-faq-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.v-faq-item {
-  background: linear-gradient(to right, var(--cloie-white) 0%, #FAFBFC 100%);
-  margin-bottom: 16px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
-  border-left: 3px solid transparent;
-  transition: border-left-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.v-faq-item:hover {
-  border-left-color: var(--cloie-blue);
-  box-shadow: 0 4px 12px rgba(15, 168, 251, 0.1);
-}
-
-.v-faq-question {
-  padding: 24px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: color 0.3s ease;
-}
-
-.v-faq-question:hover {
-  color: var(--cloie-blue);
-}
-
-.v-faq-icon {
-  font-size: 24px;
-  color: var(--cloie-blue);
-  transition: transform 0.3s ease;
-}
-
-.v-faq-item.active .v-faq-icon {
-  transform: rotate(180deg);
-}
-
-.v-faq-answer {
-  max-height: 0;
-  padding: 0 24px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  color: var(--cloie-text-muted);
-}
-
-.v-faq-item.active .v-faq-answer {
-  max-height: 400px;
-  padding: 0 24px 24px;
-}
-
-.v-faq-answer-text {
-  padding-top: 8px;
-}
-
 @media (max-width: 1024px) {
   .v-grid-3 {
     grid-template-columns: repeat(2, 1fr);
