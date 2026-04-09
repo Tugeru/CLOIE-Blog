@@ -18,7 +18,7 @@ if (toggleBtn && navLinks) {
 
 const reveals = document.querySelectorAll('.v-reveal');
 const revealOptions = {
-  threshold: 0.15,
+  threshold: 0.08,
   rootMargin: '0px 0px -50px 0px'
 };
 
