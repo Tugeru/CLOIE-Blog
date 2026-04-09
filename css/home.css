@@ -396,14 +396,25 @@
 .v-chapter-preview-grid {
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
+  align-items: stretch;
+}
+
+.v-chapter-preview-grid .v-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.v-chapter-preview-grid .v-card p {
+  margin-bottom: 20px;
+}
+
+.v-chapter-preview-grid .v-card .v-card-cta {
+  margin-top: auto;
 }
 
 .v-card--references {
   border-left: 4px solid var(--cloie-gold);
-}
-
-.v-card--references .v-card-cta {
-  margin-top: 24px;
 }
 
 .v-chapter-badge--resource {
