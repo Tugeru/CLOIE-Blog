@@ -581,6 +581,11 @@
     gap: 8px;
   }
 
+  .v-method-grid {
+    grid-template-columns: 1fr;
+    min-width: 0;
+  }
+
   .v-reference-meta {
     gap: 8px;
   }
