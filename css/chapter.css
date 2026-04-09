@@ -84,7 +84,10 @@
 
 .v-article-grid {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 24px;
+  width: 100%;
+  min-width: 0;
 }
 
 .v-article-block {
@@ -92,6 +95,7 @@
   border: 1px solid #e5edf5;
   border-radius: 12px;
   padding: 28px;
+  min-width: 0;
 }
 
 .v-article-block h2,
@@ -471,6 +475,56 @@
   color: #6c7a89;
 }
 
+.v-reference-meta {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.v-reference-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid #cde6f8;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--cloie-blue-dark);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.v-reference-layout > * + * {
+  margin-top: 24px;
+}
+
+.v-reference-list {
+  margin: 0;
+  padding-left: 28px;
+}
+
+.v-reference-list li {
+  color: var(--cloie-text-muted);
+  line-height: 1.75;
+  margin-bottom: 12px;
+  padding-left: 8px;
+  text-indent: -8px;
+}
+
+.v-reference-list a {
+  color: var(--cloie-blue-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+}
+
+.v-reference-list a:hover {
+  color: var(--cloie-blue);
+}
+
 .v-chapter-nav {
   margin-top: 40px;
   display: flex;
@@ -503,6 +557,16 @@
     gap: 8px;
   }
 
+  .v-reference-meta {
+    gap: 8px;
+  }
+
+  .v-reference-chip {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
   .v-jump-link {
     width: 100%;
     text-align: center;
@@ -510,6 +574,10 @@
 
   .v-article-block {
     padding: 22px;
+  }
+
+  .v-reference-list {
+    padding-left: 24px;
   }
 
   .v-significance-grid,
