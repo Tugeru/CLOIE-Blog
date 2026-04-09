@@ -425,8 +425,25 @@
 
 .v-team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+}
+
+.v-sponsor-grid {
+  display: grid;
+  justify-content: center;
+}
+
+.v-sponsor-card {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--cloie-white);
+  border-radius: 12px;
+  padding: 40px 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid var(--cloie-gold);
 }
 
 .v-team-card {
@@ -484,6 +501,12 @@
 
   .v-team-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .v-team-grid .v-team-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: 472px;
+    margin: 0 auto;
   }
 
   .v-stakeholder-grid {
