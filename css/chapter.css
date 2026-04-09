@@ -525,6 +525,30 @@
   color: var(--cloie-blue);
 }
 
+.v-reference-cta {
+  border: 1px solid #cfe6fb;
+  border-radius: 12px;
+  padding: 20px 22px;
+  background: linear-gradient(135deg, #f4faff 0%, #eef8ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.v-reference-cta h3 {
+  margin: 0;
+  color: var(--cloie-blue-dark);
+  font-size: 20px;
+}
+
+.v-reference-cta p {
+  margin: 0;
+  flex: 1;
+  min-width: 280px;
+}
+
 .v-chapter-nav {
   margin-top: 40px;
   display: flex;
@@ -574,6 +598,22 @@
 
   .v-article-block {
     padding: 22px;
+  }
+
+  .v-reference-cta {
+    padding: 18px;
+  }
+
+  .v-reference-cta h3 {
+    font-size: 18px;
+  }
+
+  .v-reference-cta p {
+    min-width: 0;
+  }
+
+  .v-reference-cta .v-btn {
+    width: 100%;
   }
 
   .v-reference-list {

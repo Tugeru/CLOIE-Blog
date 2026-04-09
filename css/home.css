@@ -393,6 +393,31 @@
   border: 1px solid #cde6f8;
 }
 
+.v-chapter-preview-actions {
+  display: flex;
+  justify-content: center;
+  margin: -24px 0 28px;
+}
+
+.v-chapter-preview-grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.v-card--references {
+  border-left: 4px solid var(--cloie-gold);
+}
+
+.v-card--references .v-card-cta {
+  margin-top: 24px;
+}
+
+.v-chapter-badge--resource {
+  color: #8d6a00;
+  background: #fff8de;
+  border-color: #f0d990;
+}
+
 .v-team-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -448,6 +473,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .v-chapter-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .v-team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -461,6 +490,18 @@
   .v-grid-3,
   .v-grid-2,
   .v-team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .v-chapter-preview-actions {
+    margin: -18px 0 22px;
+  }
+
+  .v-chapter-preview-actions .v-btn {
+    width: 100%;
+  }
+
+  .v-chapter-preview-grid {
     grid-template-columns: 1fr;
   }
 
